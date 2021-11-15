@@ -264,23 +264,23 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void call(var id) {
-    IO.Socket socket =
-        IO.io('http://192.168.43.92:5000' 'heshk beshk ', <String, dynamic>{
-      'transports': ['websocket'],
-      'autoConnect': false,
-    });
+    // IO.Socket socket =
+    //     IO.io('http://192.168.43.92:5000' 'heshk beshk ', <String, dynamic>{
+    //   'transports': ['websocket'],
+    //   'autoConnect': false,
+    // });
 
     socket.emit('call', id);
   }
 
-  void answerCall(var id) {
-    IO.Socket socket =
-        IO.io('http://192.168.43.92:5000' 'heshk beshk ', <String, dynamic>{
-      'transports': ['websocket'],
-      'autoConnect': false,
-    });
+  void isAVailable(var id) {
+    // IO.Socket socket =
+    //     IO.io('http://192.168.43.92:5000' 'heshk beshk ', <String, dynamic>{
+    //   'transports': ['websocket'],
+    //   'autoConnect': false,
+    // });
 
-    socket.emit('answercall', id);
+    socket.emit('isAVailable', id);
   }
 
   // connectSocket() {
